@@ -22,7 +22,7 @@ export class PlayersController {
     const querySchema = z.object({
       page: z.coerce.number().default(1),
       size: z.coerce.number().max(100).default(20),
-      queue: z.nullable(z.coerce.number(z.nativeEnum(QueueEnum))),
+      queue: z.optional(z.coerce.number()),
     });
 
     const { page, size, queue } = querySchema.parse(query);
