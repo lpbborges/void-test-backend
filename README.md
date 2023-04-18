@@ -1,12 +1,18 @@
 # void-backend-test
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-<!-- [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. -->
 
 ## Installation
+
+First of all, you need to have a pg database running, you can start it with docker if you don't have one
+
+```bash
+docker compose up -d
+```
+
+Copy the .env.example file as .env and fill the vars with your data
+
+```bash
+cp .env.example .env
+```
 
 ```bash
 npm install
