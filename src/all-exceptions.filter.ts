@@ -39,7 +39,7 @@ export class AllExceptionsFilter implements ExceptionFilter {
           statusCode: exception.response.status,
           message: exception.response.statusText,
         },
-        exception.response.status,
+        exception.response?.status || HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }
 
